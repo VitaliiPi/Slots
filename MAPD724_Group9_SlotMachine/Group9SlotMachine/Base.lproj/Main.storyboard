@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="HuH-yd-FjP">
+            <objects>
+                <viewController wantsFullScreenLayout="YES" hidesBottomBarWhenPushed="YES" id="fsg-MU-ZBL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uOs-e8-PXZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEr-FA-pQB">
+                                <rect key="frame" x="36" y="583" width="303" height="64"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                                <state key="normal" title="Back To Game">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BV1-FR-VrT" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="KhL-fB-3WA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To Play Manual" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYb-ej-uBT">
+                                <rect key="frame" x="48" y="35" width="279" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REG-Ue-QMO">
+                                <rect key="frame" x="8" y="272" width="85" height="152"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="55P-Hr-vzh"/>
+                                    <constraint firstAttribute="width" constant="85" id="7va-27-eb5"/>
+                                </constraints>
+                                <string key="text">    Oranges    
+    Bananas   
+    Grapes   
+    Bells       
+    Cherries   
+    Bars          
+    Sevens  </string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Xx1-Qd-nml">
+                                <rect key="frame" x="93" y="272" width="217" height="152"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">- 12.3% probability of winning
+- 13.8% probability of winning
+- 15.4% probability of winning
+- 3.1% probability of winning
+- 7.7% probability of winning
+- 4.6% probability of winning
+- 1.5% probability of winning</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="wc7-BB-Imq">
+                                <rect key="frame" x="0.0" y="88" width="383" height="191"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="191" id="InY-fs-Xvr"/>
+                                </constraints>
+                                <mutableString key="text">1. You are given 5000 credits.                                              2. Select what value are you willing to bet.                          3. Upon pressing Bet button, you will see it in Bet display above reels.                                                                            4. Pressing SPIN button will start your reels spin and so the game will start.                                                               5. If you do win, your win will be added to WINNINGS display.                                                                                   6. Credits lost will be added towards global Jackpot.       7. Winning combinations:</mutableString>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For Questions and Support" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTO-UX-FZh">
+                                <rect key="frame" x="65" y="500" width="245" height="30"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="blink@i.ua" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqU-sk-cFr">
+                                <rect key="frame" x="108" y="529" width="159" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="bmz-VW-SCv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aur-v5-c2g">
+                                <rect key="frame" x="0.0" y="406" width="375" height="86"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="05x-i9-Qyz"/>
+                                </constraints>
+                                <string key="text">8. Reset button resets the game to it's original starting state.                                                                                   9. Quit button quits from the game.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aur-v5-c2g" firstAttribute="leading" secondItem="wc7-BB-Imq" secondAttribute="leading" id="58Z-IC-nwk"/>
+                            <constraint firstItem="hRU-0x-FI6" firstAttribute="trailing" secondItem="Xx1-Qd-nml" secondAttribute="trailing" constant="65" id="800-9F-uhi"/>
+                            <constraint firstItem="bYb-ej-uBT" firstAttribute="centerX" secondItem="uOs-e8-PXZ" secondAttribute="centerX" id="97A-M5-EDy"/>
+                            <constraint firstItem="sEr-FA-pQB" firstAttribute="leading" secondItem="hRU-0x-FI6" secondAttribute="leading" constant="36" id="Hlv-JE-4QQ"/>
+                            <constraint firstItem="REG-Ue-QMO" firstAttribute="bottom" secondItem="Xx1-Qd-nml" secondAttribute="bottom" id="ImK-Ab-YS7"/>
+                            <constraint firstItem="sEr-FA-pQB" firstAttribute="top" secondItem="lqU-sk-cFr" secondAttribute="bottom" constant="28" id="Jo4-3M-fVG"/>
+                            <constraint firstItem="aur-v5-c2g" firstAttribute="centerX" secondItem="sEr-FA-pQB" secondAttribute="centerX" id="Psq-r1-Z3U"/>
+                            <constraint firstItem="DTO-UX-FZh" firstAttribute="top" secondItem="aur-v5-c2g" secondAttribute="bottom" constant="8" id="VOK-9i-3Fv"/>
+                            <constraint firstItem="bYb-ej-uBT" firstAttribute="top" secondItem="hRU-0x-FI6" secondAttribute="top" constant="35" id="W95-qW-P8H"/>
+                            <constraint firstItem="bYb-ej-uBT" firstAttribute="leading" secondItem="hRU-0x-FI6" secondAttribute="leading" constant="48" id="WPX-FR-ZFL"/>
+                            <constraint firstItem="bYb-ej-uBT" firstAttribute="centerX" secondItem="lqU-sk-cFr" secondAttribute="centerX" id="ZSe-df-N9i"/>
+                            <constraint firstItem="Xx1-Qd-nml" firstAttribute="leading" secondItem="REG-Ue-QMO" secondAttribute="trailing" id="axl-tY-68U"/>
+                            <constraint firstItem="lqU-sk-cFr" firstAttribute="leading" secondItem="hRU-0x-FI6" secondAttribute="leading" constant="108" id="bKw-to-7Bn"/>
+                            <constraint firstItem="wc7-BB-Imq" firstAttribute="leading" secondItem="hRU-0x-FI6" secondAttribute="leading" id="ctw-dt-jN3"/>
+                            <constraint firstAttribute="bottom" secondItem="lqU-sk-cFr" secondAttribute="bottom" constant="112" id="fEE-FG-07w"/>
+                            <constraint firstItem="wc7-BB-Imq" firstAttribute="top" secondItem="bYb-ej-uBT" secondAttribute="bottom" constant="17" id="fQ7-Sk-3us"/>
+                            <constraint firstItem="REG-Ue-QMO" firstAttribute="leading" secondItem="hRU-0x-FI6" secondAttribute="leading" constant="8" id="gXr-Je-O9E"/>
+                            <constraint firstItem="DTO-UX-FZh" firstAttribute="top" secondItem="REG-Ue-QMO" secondAttribute="bottom" constant="76" id="i8H-dV-dzP"/>
+                            <constraint firstItem="REG-Ue-QMO" firstAttribute="top" secondItem="Xx1-Qd-nml" secondAttribute="top" id="ll8-Oh-fpl"/>
+                            <constraint firstItem="Xx1-Qd-nml" firstAttribute="trailing" secondItem="DTO-UX-FZh" secondAttribute="trailing" id="mVw-BA-CHh"/>
+                            <constraint firstItem="lqU-sk-cFr" firstAttribute="top" secondItem="DTO-UX-FZh" secondAttribute="bottom" constant="-1" id="myo-7Y-7sW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wc7-BB-Imq" secondAttribute="trailing" constant="-24" id="p1C-gz-jMp"/>
+                            <constraint firstItem="REG-Ue-QMO" firstAttribute="top" secondItem="uOs-e8-PXZ" secondAttribute="top" constant="272" id="snb-WV-rD6"/>
+                            <constraint firstItem="aur-v5-c2g" firstAttribute="centerX" secondItem="DTO-UX-FZh" secondAttribute="centerX" id="sot-1K-gnU"/>
+                            <constraint firstItem="bYb-ej-uBT" firstAttribute="centerX" secondItem="DTO-UX-FZh" secondAttribute="centerX" id="xYF-6F-nHN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hRU-0x-FI6"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NEG-2K-lex"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sJa-jf-hzn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="138.98050974512745"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Group9SlotMachine" customModuleProvider="target" propertyAccessControl="none" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eeH-oY-S5s">
+                                <rect key="frame" x="268" y="577" width="62" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="help">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="fsg-MU-ZBL" kind="presentation" modalPresentationStyle="fullScreen" id="8H7-ea-Jyd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lf7-zg-LsS"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="help" width="60" height="60"/>
+    </resources>
+</document>
